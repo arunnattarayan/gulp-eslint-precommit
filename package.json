@@ -1,0 +1,25 @@
+{
+  "author": "Or Kazaz",
+  "dependencies": {
+  },
+  "description": "An example on how to create a pre-commit git hook that will lint ONLY the files you're currently working on - using gulp, eslint & Google js code style",
+  "devDependencies": {
+    "eslint-config-google": "0.3.0",
+    "gulp": "3.9.0",
+    "gulp-debug": "2.1.2",
+    "gulp-eslint": "1.1.0",
+    "gulp-git": "1.6.0",
+    "gulp-if": "2.0.0",
+    "gulp-util": "3.0.7",
+    "guppy-pre-commit": "0.2.1",
+    "yargs": "3.26.0"
+  },
+  "eslintConfig": {
+    "extends": "google"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "name": "GulpEslint",
+  "version": "1.0.0"
+}
