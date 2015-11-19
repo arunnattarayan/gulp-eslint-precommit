@@ -1,4 +1,4 @@
-# GulpEslintPreCommit
+# Gulp Eslint pre-commit
 linting is what keeps our code clean and good looking.
 I like to follow the [Google js code style](https://google.github.io/styleguide/javascriptguide.xml) when linting the js files.
 
