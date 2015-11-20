@@ -1,6 +1,6 @@
 # Gulp Eslint pre-commit
 linting is what keeps our code clean and good looking.
-I like to follow the [Google js code style](https://google.github.io/styleguide/javascriptguide.xml) when linting the js files.
+I like to follow the [Google js style guide](https://google.github.io/styleguide/javascriptguide.xml) when linting the js files.
 
 Most of the gulp plugins and examples I came across with were linting ALL of the js files.
 That is causing few problems:
@@ -24,7 +24,7 @@ Please pay attention to this part in the ```package.json``` file:
   "extends": "google"
 }
 ```
-This section is what links eslint configurations to the Google js code style that was installed in the package [eslint-config-google](https://www.npmjs.com/package/eslint-config-google).
+This section is what links eslint configurations to the Google js style guide that was installed in the package [eslint-config-google](https://www.npmjs.com/package/eslint-config-google).
 <br><br>
 Go to the file **js-to-play-with/play.js** and remove the comments: ```/*eslint-disable*/``` and ```/* eslint-enable */```
 
