@@ -13,7 +13,7 @@ I also saw some plugins that doesn't lint all of the files, but for each file th
 In this example I tried to create a fast and easy to use gulp code that will fix all of these problems.
 
 # Steps
-Install of the dependencies:
+Install the dependencies:
 ```
 npm install
 ```
