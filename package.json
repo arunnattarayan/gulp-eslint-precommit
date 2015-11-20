@@ -1,5 +1,8 @@
 {
-  "author": "Or Kazaz",
+  "author": {
+      "name": "Or Kazaz",
+      "url": "https://github.com/kazazor"
+  },
   "dependencies": {
   },
   "description": "An example on how to create a pre-commit git hook that will lint ONLY the files you're currently working on - using gulp, eslint & Google js code style",

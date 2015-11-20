@@ -18,6 +18,14 @@ Install of the dependencies:
 npm install
 ```
 
+Please pay attention to this part in the ```package.json``` file:
+```
+"eslintConfig": {
+  "extends": "google"
+}
+```
+This section is what links eslint configurations to the Google js code style that was installed in the package [eslint-config-google](https://www.npmjs.com/package/eslint-config-google).
+<br><br>
 Go to the file **js-to-play-with/play.js** and remove the comments: ```/*eslint-disable*/``` and ```/* eslint-enable */```
 
 run:
@@ -31,7 +39,7 @@ This task also takes 2 parameters:
 **--show** - will show you the list of files it is trying to lint (useful when also usin the --all parameter)
 
 So how does the pre-commit git hook works?
-When installing the package: ***guppy-pre-commit*** all you need to do is to create this task:
+When installing the package: [guppy-pre-commit](https://github.com/therealklanni/guppy-pre-commit) all you need to do is to create this task:
 ```
 gulp.task('pre-commit', ['lint']);
 ```
