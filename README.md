@@ -36,7 +36,7 @@ This task also takes 2 parameters:
 <br>
 **--all** - will lint ALL of the js files and not just the ones you've worked on.
 <br>
-**--show** - will show you the list of files it is trying to lint (useful when also usin the --all parameter)
+**--show** - will show you the list of files it is trying to lint (useful when also using the --all parameter)
 
 So how does the pre-commit git hook works?
 When installing the package: [guppy-pre-commit](https://github.com/therealklanni/guppy-pre-commit) all you need to do is to create this task:
