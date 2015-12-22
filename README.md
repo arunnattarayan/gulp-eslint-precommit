@@ -38,7 +38,7 @@ Please pay attention to this part in the ```package.json``` file:
 ```
 This section is what links eslint configurations to the Google js style guide that was installed in the package [eslint-config-google](https://www.npmjs.com/package/eslint-config-google).
 <br><br>
-Go to the file **js-to-play-with/play.js** and remove the comments: ```/*eslint-disable*/``` and ```/* eslint-enable */```.
+Go to the file **js-to-play-with/play.js** and remove the comments: ```/*eslint-disable*/``` and ```/* eslint-enable */``` (don't forget to save the file..).
 
 Now, let the magic happen!
 
@@ -46,12 +46,12 @@ Run:
 ```
 gulp lint
 ```
-This will run eslint on the file. It won't show you anything.. Why is that?
-Since the default option I did is to run ONLY on the changed files (OK we just changed the file), but ONLY on the changed ROWS. So we didn't changed any row with eslint error.
+This will run eslint on the file. But it will show only 2 errors and not 11+..<br> Why is that? <br>
+Since the default option I did is to run ONLY on the changed files (OK we just changed the file), but ONLY on the changed ROWS. So we didn't changed any row with eslint errors.
 
 So what should we do?
 
-This task also takes 2 parameters:
+This task also takes 4 parameters:
 <br>
 **--all** - will lint ALL of the js files and not just the ones you've worked on.
 <br>
