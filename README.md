@@ -1,4 +1,6 @@
 # Gulp Eslint pre-commit
+The purpose: **lint only the files you've worked on in this commit**.
+
 linting is what keeps our code clean and good looking.
 I like to follow the [Google js style guide](https://google.github.io/styleguide/javascriptguide.xml) when linting the js files.
 
