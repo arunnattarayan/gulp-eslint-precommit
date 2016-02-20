@@ -187,6 +187,12 @@ kazazGulpUtils.matchWorkspaceFiles = function matchWorkspaceFiles(statusRow, opt
 
   if (statusRow && statusRow !== '') {
     var stagedStatus = statusRow[0].toUpperCase();
+
+    // Why are we checking also the unstaged status? Didn't we say that the package 'git-pre-commit'
+    // (https://www.npmjs.com/package/git-pre-commit) is taking care of it for us by stashing it?
+    // Well it does, but just in case someone don't want to use it I kept the handling on the unstaged
+    // status here. Just in case :-)
+    // (If you are using 'git-pre-commit' then you can remove the unstaged status checks)
     var unStagedStatus = statusRow[1].toUpperCase();
 
     excludeStatuses.forEach(function(status) {
