@@ -16,41 +16,39 @@ But, when trying to add linting in an **already existing project** it becomes an
 <h4>**Solution:**</h4> By linting only the changed rows in the changed files you won't even know if someone did it.
 * I also saw some plugins that doesn't lint all of the files, but for each file they run git status [file_path], which is **very slow!** <br>
 <h4>**Solution:**</h4> Perform a smarter way of checking the changed files and rows.
-
 * It also lints your unstaged changes!! This could cause a lot of issues and unwanted situations!<br>
 <h4>**Solution:**</h4>
 In this example we aren't writing any code to handle this situation, but instead we use the package [git-pre-commit](https://www.npmjs.com/package/git-pre-commit) that handles that for us as part of the pre-commit hook we'll have.
 
 In this example I tried to create a fast and easy to use gulp code that will fix all of these problems.
 
-# Steps
-1. Install the dependencies:
-```
+## Steps
+
+**1.**Install the dependencies:
+```shell
 npm install
 ```
-* Install gulp so you could use it in command line:
-```
+**2.**Install gulp so you could use it in command line:
+```shell
 sudo npm install -g gulp
 ```
-* Please pay attention to this part in the ```package.json``` file:
-```
+**3.**Please pay attention to this part in the ```package.json``` file:
+```javascript
 "eslintConfig": {
   "extends": "google"
 }
 ```
 This section is what links eslint configurations to the Google js style guide that was installed in the package [eslint-config-google](https://www.npmjs.com/package/eslint-config-google).
 <br><br>
-Go to the file **js-to-play-with/play.js** and remove the comments: ```/*eslint-disable*/``` and ```/* eslint-enable */``` (don't forget to save the file..).
-
-* Now, let the magic happen!<br>
-Run:
-```
+**4.**Go to the file **js-to-play-with/play.js** and remove the comments: ```/*eslint-disable*/``` and ```/* eslint-enable */``` (don't forget to save the file..). <br>
+Now, let the magic happen! Run:
+```shell
 gulp lint
 ```
 This will run eslint on the file. But it will show only 2 errors and not 11+..<br> Why is that? <br>
 Since the default option I did is to run ONLY on the changed files (OK we just changed the file), but ONLY on the changed ROWS. So we didn't changed any row with eslint errors.
 
-* So what should we do?<br>
+**5.**So what should we do?<br>
 This task also takes 4 parameters:
 <br>
 **--all** - will lint ALL of the js files and not just the ones you've worked on.
