@@ -6,16 +6,14 @@ I like to follow the [Google js style guide](https://google.github.io/styleguide
 
 Most of the gulp plugins and examples I came across with were linting ALL of the js files.
 That is causing few problems:
+
 1. It is dammmn too slow in big projects! Linting all of the js files?!? are we crazy?! <br>
 <h4>**Solution:**</h4> Lint ONLY the changed files.
-
 * Linting all of your CHANGED files all the time could work if used since the **beginning** of the project.<br>
 But, when trying to add linting in an **already existing project** it becomes an impossible mission. <br>
 <h4>**Solution:**</h4> Lint ONLY the changed files **AND ONLY** the changed ROWS.
-
 * If for some reason someone pushed code that doesn't pass linting (something on his local machine didn't work), you try to push your code but stuck because of the other code. And then you both try to fix it and.. conflicts. <br>
 <h4>**Solution:**</h4> By linting only the changed rows in the changed files you won't even know if someone did it.
-
 * I also saw some plugins that doesn't lint all of the files, but for each file they run git status [file_path], which is **very slow!** <br>
 <h4>**Solution:**</h4> Perform a smarter way of checking the changed files and rows.
 
