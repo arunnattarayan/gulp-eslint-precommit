@@ -61,7 +61,7 @@ This task also takes 4 parameters:
 a regular expression and not just a specific file. For example: --path=apps/scomposer/\*\*/\*.js
 <br>
 So now try and run this command:
-```
+```shell
 gulp lint --entire
 ```
 Now it will lint all the changed files BUT the entire files and not just the changed rows.
@@ -76,7 +76,7 @@ When installing the package: [git-pre-commit](https://www.npmjs.com/package/git-
 This will cause the pre-commit hook to perform the command ```gulp pre-commit```.
 
 Which looks like this in our ```Gulpfile.js```:
-```
+```js
 gulp.task('pre-commit', ['lint']);
 ```
 The name **pre-commit** is NOT important and it could have been anything you want, like documented in the [git-pre-commit](https://www.npmjs.com/package/git-pre-commit) package.
