@@ -20,7 +20,7 @@
     "gulp-git": "1.6.0",
     "gulp-if": "2.0.0",
     "gulp-util": "3.0.7",
-    "git-pre-commit": "0.1.9",
+    "git-pre-commit": "^0.1.2",
     "path": "0.12.7",
     "q": "1.4.1",
     "run-sequence": "1.1.5",
