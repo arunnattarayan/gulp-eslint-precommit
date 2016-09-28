@@ -20,7 +20,7 @@
     "gulp-git": "1.6.0",
     "gulp-if": "2.0.0",
     "gulp-util": "3.0.7",
-    "git-pre-commit": "git+ssh://kazazor@github.com/kazazor/git-pre-commit.git#kazaz/replace_symlink_with_copy",
+    "git-pre-commit": "^2.0.0",
     "path": "0.12.7",
     "q": "1.4.1",
     "run-sequence": "1.1.5",
